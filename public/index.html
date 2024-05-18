@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-   
-    <title>product list</title>
-  </head>
-  <body>
-    
-    <div id="root"></div>
-    
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <title>product list</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h2>список товарів</h2>
+       
+        <form name="productForm">
+          
+          <input type="hidden" name="id" value="0" />
+         
+          <div class="mp-3">
+            <label for="title">Назва</label>
+            <input class="form-control" name="title" />
+          </div>
+         
+          <div class="mp-3">
+            <label for="count">кількість</label>
+            <input class="form-control" name="count" />
+          </div>
+         
+          <div class="mp-3">
+            <label for="width">ширина</label>
+            <input class="form-control" name="width" />
+            <label for="height">висота</label>
+            <input class="form-control" name="height" />
+          </div>
+         
+          <div class="mp-3">
+            <label for="weight">вага</label>
+            <input class="form-control" name="weight" />
+          </div>
+         
+          <div class="mp-3">
+            <label for="comment">коментар</label>
+            <input class="form-control" name="comment" />
+          </div>
+         
+          <div class="mp-3">
+            <label for="filedata">фото</label>
+            <input type="file" class="form-control" name="filedata" />
+          </div>
+       
+          <div class="mb-3">
+        <button type="submit" class="">зберегти</button>
+        <a id="reset" class="">Скинути</a>
+       </div>
+    </form>
+        
+    <table>
+          <thead>
+            <tr>
+              <th>назва</th>
+              <th>кількість</th>
+              <th>ширина</th>
+              <th>висота</th>
+              <th>вага</th>
+              <th>коментар</th>
+              <th>фото</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>   
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+
+</body>
+
 </html>
